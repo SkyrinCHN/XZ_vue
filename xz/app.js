@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static('public'));
 //
 app.use(cors({
-  origin: "http://127.0.0.1:5500"
+  origin: "http://localhost:8080"
 }))
 /*使用路由器来管理路由*/
 app.use("/index",indexRoute);
