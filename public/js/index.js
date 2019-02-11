@@ -17,6 +17,7 @@
        axios.get("http://localhost:3000/index")
          .then(res=> {//用箭头函数是因为 要让内外this一致,所以才打开作用域
            this.products = res.data;
+           console.log(res.data);
          }
       )
     }
